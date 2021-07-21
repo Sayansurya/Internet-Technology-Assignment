@@ -26,8 +26,7 @@ function suggest(str) {
                 return;
             }
         };
-        /*xttp.open("GET","ajax.php?name="+str,true);
-            xttp.send();*/
+        
         xttp.open("GET", "ajax.php?fname="+str, true);
         xttp.send();
     }
@@ -48,10 +47,10 @@ function info(event){
             abt.innerHTML = text;
             return;
         }
+        
     };
 
 
     xttp.open("GET", "ajax.php?ip="+txt, true);
-    //xttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xttp.send();
 }
